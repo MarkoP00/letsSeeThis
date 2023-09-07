@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 1000px;
+    background: #000;
+    color:#fff;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    transition: 1s;
+    z-index: 999999;
+}
+
+header.sticky{
+    height:80px;
+}
+header .banner{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+header.sticky .banner{
+    opacity: 0.5;
+}
+header .logo{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 10em;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+    font-family: 'Caprisimo';
+    font-weight: 600;
+    font-style: italic;
+}
+
+header.sticky .logo{
+    position: absolute;
+    font-size: 2em;
+    left: 150px;
+    transform: translate(-50%, -50%);
+}
+nav{
+    position:relative;
+    display: flex;
+    z-index: 1;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    transition: 0.25s;
+    color:#fff;
+    transform: translateX(100px);
+    opacity: 0;
+}
+header.sticky nav ul{
+    transform: translateX(0); 
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #ff275f
+}
+/*Header done!*/
+
+
+/*Section 1 style*/
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 300px;
+}
+.contentBox{
+    width: 100%;
+}
+.topText h2{
+    font-family: 'Cinzel Decorative',sans-serif;
+    font-size:5rem;
+    color:#fff;
+    background-image: linear-gradient(43deg, #efe811 0%, #d6144b 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.middleText h3{
+    font-size: 2.2rem;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    /* font-style: italic; */
+    margin-bottom: 20px;
+    
+}
+.bottomText h3{
+    font-size: 2.2rem;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+/*Second Section style*/
+
+.sec2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+/*first part sec 2*/
+
+.imgBoxMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1200px;
+    gap: 50px;
+}
+.firstPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gold;
+}
+.textFirst h3{
+    width: 500px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+
+/*second part sec 2*/
+.secondPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.secondText h3{
+    width: 500px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    color:#fff;
+}
+.secondImage img{
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+.sec2 img{
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+/*Section 3 STYLING*/
+
+.sec3{
+    height: 100vh;
+}
+.fixedImage{
+    margin-top: 300px;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/1693547772639.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixedImage h1{
+   
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-style:oblique;
+    font-family: 'Cinzel Decorative',sans-serif;
+    background-image: linear-gradient(43deg, #f3c719 0%, #00c7e6 46%, #cfc204 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.quickText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color:#fff;
+    margin-bottom: 100px;
+    
+}
+.quickText h1{
+    font-family: 'Dancing Script';
+    border-bottom: 2px solid gold;
+}
+
+
+/*Gallery section 4*/
+.section4Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.5s;
+}
+.mainGallerySection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.bigImage img{
+    width: 1000px;
+    height: 950px;
+    object-fit:cover;
+    transition: 0.5s;
+}
+.smallImages{
+    position: absolute;
+    bottom: 20px;
+    transition: 0.5s;
+
+}
+.smallImages img{
+    width: 100px;
+    height: 120px;
+    transition: 0.5s;
+    margin-right: 20px;
+    border-radius: 20px;
+    /* border: 1px solid gold; */
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px gold);
+}
+.smallImages img:hover{
+    transform: scale(1.2);
+}
+
+/*Section 5 styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+
+
+.likeBody3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+.mainConateiner{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #222;
+}
+.mainConateiner .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.mainConateiner .clip.clip1{
+    clip-path: polygon(0 0, 49% 0, 22% 100%, 0% 100%);
+    /*ovaj kod je uzet sa sajta https://bennettfeely.com/clippy/  izabrao sam oblik slike, prekopirao kod skroz dole*/
+    background:url(threeimages/ResinArt.webp);
+    background-size: cover;
+}
+.mainConateiner .clip.clip2{
+    clip-path: polygon(48% 0, 100% 0, 41% 100%, 19% 100%);
+    background:url(threeimages/resin-mirror-sharlene-robertson-8.jpeg);
+    background-size:cover;
+}
+.mainConateiner .clip.clip3{
+    clip-path: polygon(66% 56%, 100% 0, 100% 100%, 40% 100%);
+    background:url(threeimages/716_SPRAY-AND-MIST_1170X619PX.jpeg);
+    background-size: cover;
+}
+.mainConateiner:hover .clip{
+    clip-path: polygon(100% 50%, 100% 0, 100% 100%, 100% 100%);
+}
+.mainConateiner .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.mainConateiner .clip .textContent3{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 70%;
+    padding: 20px;
+    background-color: aliceblue;
+    transition: 0.5s;
+    color: #000;
+}
+.mainConateiner .clip:hover .textContent3{
+    bottom: 0;
+}
+.ThreeImagesTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 3rem;
+}
+.ThreeImagesTextDiv h1{
+    font-family: 'Dancing Script';
+    border-bottom: 2px solid gold;
+   
+}
+
+/*Section 6 styling code*/
+
+.sec6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.sec6Main{
+    width: 1000px;
+}
+.sec6 .sec6Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.sec6 .sec6Text h2{
+    font-family: 'Dancing Script';
+    border-bottom: 2px solid gold;
+}
+.sec6 .sec6orderInfoText h3{
+    font-family: 'Cinzel Decorative',sans-serif;;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.sec6 .sec6orderInfoText h3 a{
+    font-family: 'Cinzel Decorative',sans-serif;;
+    font-size: 2rem;
+    text-decoration: none;
+    color:#fff;
+    background-image: linear-gradient(43deg, #efe811 0%, #d6144b 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.instaImg a{
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#ec2d60
+}
+.copyRight{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 100px;
+    pointer-events: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+#progressBar{
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressBar::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressBar:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+@media (max-width: 426px){
+    .textSec img{
+        width: 300px;
+    }
+    .textSec{
+        margin-bottom: 2000px;
+    }
+}
+@media (max-width: 991px){
+    section,
+    header{
+        padding: 40px;
+    }
+    section h2{
+        font-size: 2em;
+    }
+    header.sticky .logo{
+        left: 120px;
+    }
+    header .logo{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 6em;
+        left: 50%;
+    }
+    header.sticky .banner{
+        /* opacity: 0;  vise mi se svidja kad se vidi*/
+    }
+    nav ul{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav.active ul{
+        position: fixed;
+        top: 80px;
+        left: 55%;
+        width: 100%;
+        /* height: calc(100% - 80px); */
+        background-color: #000;
+        display: flex;
+        /* justify-content: right; */
+        flex-direction: column;
+        border-bottom: 1px solid gold;
+        border-left: 1px solid gold;
+        border-bottom-left-radius: 10px;
+    }
+    header.sticky nav ul{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    nav ul li a{
+        font-size: 2em;
+        padding: 5px 15px ;
+    }
+    header.sticky .toggle{
+        position: fixed;
+        top:15px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: #fff url(menubar/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .toggle.active{
+        background: #fff url(menubar/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .firstPart{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid gold;
+    }
+    .secondPart{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid gold;
+    }
+    .section4Gallery{
+        padding: 0px;
+        height: 100vh;
+    }
+    .fixedImage{
+        margin-top: 300px;
+        width: 77%;
+        height: 650px;
+        padding: 0;
+    }
+    .sec3{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 1025px){
+    .sec1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-right: 0;
+        max-width: 1000px;
+    }
+   
+    .topText h2{
+        font-size: 3.5rem;
+        display: inline;
+    }
+    .topText h3{
+        display: inline;
+    }
+    .bigImage img{
+        width: 800px;
+        height: 900px;
+        object-fit:cover;
+        transition: 0.5s;
+    }
+    .smallImages{
+        bottom: 80px;
+    }
+}
+@media (max-width: 770px){
+    .bigImage img{
+        width: 600px;
+        height: 900px;
+        object-fit:cover;
+        transition: 0.5s;
+    }
+    .smallImages{
+        bottom: 80px;
+    }
+    .fixedImage h1{
+        font-size: 2rem;
+    }
+    .fixedImage{
+        margin: 0;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .sec6Text h2{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 510px){
+    .sec1{
+        display: flex;
+        justify-content: center;
+    }
+    .sec1 h2{
+        font-size: 3rem;
+    }
+    .sec2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 20px;
+       
+    }
+    .sec2 img{
+        max-width: 320px;
+        max-height: 400px;
+    
+    }
+    .secondText h3{
+        width: 300px;
+        text-align: center;
+        font-size: 2.3rem;
+        font-family: 'Dancing Script';
+        font-weight: 700;
+        color:#fff;
+    }
+    .firstPart h3{
+        width: 300px;
+        text-align: center;
+        font-size: 2.3rem;
+        font-family: 'Dancing Script';
+        font-weight: 700;
+        color:#fff;
+    }
+}
+@media (max-width: 510px){
+    .sec1{
+        margin-left: 10px;
+    }
+    .sec1 h2{
+        font-size: 2.2rem;
+    }
+    .sec1 h3{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 426px){
+    header .logo {
+        font-size: 4rem;
+    }
+    .bigImage img{
+        width: 320px;
+        height: 600px;
+        object-fit:cover;
+        transition: 0.5s;
+    }
+    .smallImages{
+        bottom: 0px;
+    }
+    .smallImages img{
+        width: 90px;
+        height: 120px;
+        transition: 0.5s;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    .quickText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color:#fff;
+        margin-bottom: 0px;
+        
+    }
+    .textContent3 h2{
+        font-size: 1.5rem;
+    }
+    .ThreeImagesTextDiv {
+        font-size: 1.7rem;
+        position: relative;
+        top: 200px;
+        margin: 0;
+        margin-bottom: 200px;
+    }
+    .logo{
+        
+    }
+    .sec2{
+        margin-top: 10px;
+    }
+    
+    .sec6 .sec6orderInfoText h3{
+        font-family: 'Cinzel Decorative',sans-serif;;
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+    .likeBody3{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85vh;
+        background-color: #000000;
+        /* padding: 0; */
+    }
+    .contentBox{
+        width: 80%;
+    }
+}
+@media (max-width:321px){
+    .bigImage img{
+        width: 290px;
+        height: 600px;
+        object-fit:cover;
+        transition: 0.5s;
+    }
+    .smallImages img{
+        width:80px;
+        height: 110px;
+        transition: 0.5s;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    .ThreeImagesTextDiv {
+        font-size: 1.4rem;
+        position: relative;
+        top: 200px;
+        margin: 0;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .sec2{
+        margin-top: 10px;
+    }
+}
